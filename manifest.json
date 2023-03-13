@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YT Content Filter",
+  "author": "nlumiere",
+  "version": "1.0",
+  "description": "Removes short form content from YouTube recommended, prevents the playing of gaming videos.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
